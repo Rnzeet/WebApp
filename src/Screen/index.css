@@ -1,0 +1,134 @@
+.app {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+  }
+  
+  .buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  img {
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%; /* Ensure the image doesn't exceed its container */
+    animation: bounce 1s infinite; /* Add the animation */
+  }
+  
+  /* Define the bounce animation */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-110); /* Start and end position */
+    }
+    50% {
+      transform: translateY(-40px); /* Midway position */
+    }
+  }
+  .full-screen-gif-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* Set a high z-index to ensure it appears above all other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+  }
+  
+  .full-screen-gif {
+    max-width: 90%; /* Adjust the size of the full-screen GIF as needed */
+    max-height: 90%;
+  }
+
+  .app {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff4d4d; /* Romantic red color */
+    color: white;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Add transition for smooth effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transform: translateY(0); /* Reset transform */
+  }
+  
+  .buttons button:hover {
+    background-color: #ff6666; /* Lighter shade of red on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    transform: translateY(-4px); /* Add upward translation on hover */
+  }
+  
+  img {
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px; /* Soften edges for a friendly feel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .full-screen-gif-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .full-screen-gif {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .love-header {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: #ff4d4d; /* Romantic red color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px; /* Add some space below the header */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow effect to text */
+    transform: translateY(0); /* Reset transform */
+  }
+  
+  .love-header:hover {
+    transform: translateY(-4px); /* Add upward translation on hover */
+  }
+  #no-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: default; /* Make the cursor default */
+    background-color: #666; /* Dark color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s; /* Add transition for smooth effect */
+    position: relative; /* Make sure it respects the position changes */
+  }
+  
+  #no-button:hover {
+    transform: scale(1.1); /* Add a slight zoom effect on hover */
+  }
+  

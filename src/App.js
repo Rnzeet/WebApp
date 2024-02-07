@@ -1,14 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import HomeScreen from './Screen';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-       
-      </header>
+    <div className="app" style={{backgroundColor:'lightblue'}}>
+      <main>
+        <HomeScreen/>
+      </main>
+      <footer>
+        <p>&copy; 2024 My Website</p>
+      </footer>
     </div>
   );
-}
+};
 
 export default App;
