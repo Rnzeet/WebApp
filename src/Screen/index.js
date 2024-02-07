@@ -46,10 +46,10 @@ const HomeScreen = () => {
   return (
     <div className="app">
     <h1 className="love-header" style={{elevation:5}}>Date Please....?????</h1>
-    {showTed1Image && <img src={ted1} alt="Ted1" className="ted1-image" />}
-    {showImage && <img src={teddyGif} alt="Your Image" style={{ width: '200px', height: '200px',alignContent:'center',borderRadius:10
+    {showTed1Image && <img src={ted1}  className="ted1-image" />}
+    {showImage && <img src={teddyGif}  style={{ width: '200px', height: '200px',alignContent:'center',borderRadius:10
      }}/>}
-        {showTedImage && <img src={ted} alt="Ted" className="ted-image" />}
+        {showTedImage && <img src={ted}  className="ted-image" />}
     <div className="buttons">
       <button onClick={handleYesClick} style={{backgroundColor:'red',borderRadius:10,elevation:15}}>Yes</button>
       <button id="no-button" onClick={handleNoClick}>No don't click me</button>
@@ -57,7 +57,7 @@ const HomeScreen = () => {
     </div>
     {showFullScreenGif && (
         <div className="full-screen-gif-overlay" onClick={handleCloseFullScreen}>
-          <img src={crack} alt="Full Screen Gif" className="full-screen-gif" />
+          <img src={crack}  className="full-screen-gif" />
         </div>
       )}
   </div>
